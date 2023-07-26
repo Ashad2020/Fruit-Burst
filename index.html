@@ -19,8 +19,10 @@
         theme: {
           extend: {
             backgroundImage: {
-              "hero-bg":
-                "url('./images/banner1.png'), linear-gradient(180deg, #f948b2 0%, #8758f1 100%)",
+              banner1: "url('./images/banner1.png')",
+              banner2: "url('./images/banner2.png')",
+              banner3: "url('./images/banner3.png')",
+              banner4: "url('./images/banner4.png')",
             },
           },
         },
@@ -123,9 +125,41 @@
       <div class="relative mx-5 md:max-w-3xl md:mx-auto">
         <div class="carousel w-full rounded-md">
           <div id="slide1" class="carousel-item relative w-full">
-            <div class="hero min-h-[calc(100vh-100px)] bg-hero-bg p-8">
-              <!-- style="background: url(./images/banner1.png)" -->
-              <div class="bg-opacity-60"></div>
+            <div
+              class="hero min-h-[calc(100vh-100px)]"
+              style="background: url(./images/banner1.png)"
+            >
+              <!--  -->
+              <div
+                class="bg-gradient-to-b from-[#121212] to-[#a7a1a1] w-full h-full opacity-60 -z-0"
+              ></div>
+              <div class="hero-content text-center text-neutral-content z-10">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold text-white">
+                    Hello there
+                  </h1>
+                  <p class="mb-5">
+                    Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                    assumenda excepturi exercitationem quasi. In deleniti eaque
+                    aut repudiandae et a id nisi.
+                  </p>
+                  <button class="btn btn-primary">Get Started</button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <div class="hero min-h-[calc(100vh-100px)] bg-banner2">
+              <div
+                class="bg-gradient-to-b from-[#121212] to-[#a7a1a1] w-full h-full opacity-60 -z-0"
+              ></div>
               <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-md">
                   <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
@@ -138,12 +172,62 @@
                 </div>
               </div>
             </div>
-            <!-- <img src="./images/banner1.png" class="w-full" /> -->
+
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
-              <a href="#slide4" class="btn btn-circle">❮</a>
-              <a href="#slide2" class="btn btn-circle">❯</a>
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <div class="hero min-h-[calc(100vh-100px)] bg-banner3">
+              <div
+                class="bg-gradient-to-b from-[#121212] to-[#a7a1a1] w-full h-full opacity-60 -z-0"
+              ></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                  <p class="mb-5">
+                    Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                    assumenda excepturi exercitationem quasi. In deleniti eaque
+                    aut repudiandae et a id nisi.
+                  </p>
+                  <button class="btn btn-primary">Get Started</button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <div class="hero min-h-[calc(100vh-100px)] bg-banner4">
+              <div
+                class="bg-gradient-to-b from-[#121212] to-[#a7a1a1] w-full h-full opacity-60 -z-0"
+              ></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                  <p class="mb-5">
+                    Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                    assumenda excepturi exercitationem quasi. In deleniti eaque
+                    aut repudiandae et a id nisi.
+                  </p>
+                  <button class="btn btn-primary">Get Started</button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
             </div>
           </div>
         </div>
@@ -177,82 +261,3 @@
     </section>
   </body>
 </html>
-
-<!-- <div id="slide2" class="carousel-item relative w-full">
-  <div
-    class="hero min-h-screen"
-    style="background-image: url(./images/banner2.png)"
-    >
-    <div class="bg-opacity-60"></div>
-    <div class="hero-content text-center text-neutral-content">
-      <div class="max-w-md">
-        <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-        <p class="mb-5">
-          Provident cupiditate voluptatem et in. Quaerat fugiat ut
-          assumenda excepturi exercitationem quasi. In deleniti eaque
-          aut repudiandae et a id nisi.
-        </p>
-        <button class="btn btn-primary">Get Started</button>
-      </div>
-    </div>
-  </div>
-  <img src="/images/banner2.png" class="w-full" />
-  <div
-    class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-  >
-    <a href="#slide1" class="btn btn-circle">❮</a>
-    <a href="#slide3" class="btn btn-circle">❯</a>
-  </div>
-</div>
-<div id="slide3" class="carousel-item relative w-full">
-  <div
-    class="hero min-h-screen"
-    style="background-image: url(./images/banner3.png)"
-  >
-    <div class="bg-opacity-60"></div>
-    <div class="hero-content text-center text-neutral-content">
-      <div class="max-w-md">
-        <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-        <p class="mb-5">
-          Provident cupiditate voluptatem et in. Quaerat fugiat ut
-          assumenda excepturi exercitationem quasi. In deleniti eaque
-          aut repudiandae et a id nisi.
-        </p>
-        <button class="btn btn-primary">Get Started</button>
-      </div>
-    </div>
-  </div>
-  <img src="/images/banner3.png" class="w-full" />
-  <div
-    class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-  >
-    <a href="#slide2" class="btn btn-circle">❮</a>
-    <a href="#slide4" class="btn btn-circle">❯</a>
-  </div>
-</div>
-<div id="slide4" class="carousel-item relative w-full">
-  <div
-    class="hero min-h-screen"
-    style="background-image: url(./images/banner4.png)"
-  >
-    <div class="bg-opacity-60"></div>
-    <div class="hero-content text-center text-neutral-content">
-      <div class="max-w-md">
-        <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-        <p class="mb-5">
-          Provident cupiditate voluptatem et in. Quaerat fugiat ut
-          assumenda excepturi exercitationem quasi. In deleniti eaque
-          aut repudiandae et a id nisi.
-        </p>
-        <button class="btn btn-primary">Get Started</button>
-      </div>
-    </div>
-  </div>
-  <img src="/images/banner4.png" class="w-full" />
-  <div
-    class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-  >
-    <a href="#slide3" class="btn btn-circle">❮</a>
-    <a href="#slide1" class="btn btn-circle">❯</a>
-  </div>
-</div> -->
