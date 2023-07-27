@@ -24,6 +24,9 @@
               banner3: "url('./images/banner3.png')",
               banner4: "url('./images/banner4.png')",
             },
+            content: {
+              test: "*",
+            },
           },
         },
       };
@@ -102,18 +105,13 @@
         </div>
       </nav>
 
-      <!-- hero-bg -->
-      <div class="bg-hero-bg min-h-full"></div>
-
       <!-- banner section -->
       <section>
         <div class="relative mx-5 md:max-w-3xl md:mx-auto mb-24">
           <div class="carousel w-full rounded-md">
             <div id="slide1" class="carousel-item relative w-full">
-              <div
-                class="hero min-h-[calc(100vh-100px)]"
-                style="background: url(./images/banner1.png)"
-              >
+              <div class="hero min-h-[calc(100vh-100px)] bg-banner1">
+                <!-- style="background: url(./images/banner1.png)" -->
                 <div
                   class="bg-gradient-to-b from-[#121212] to-[#a7a1a1] w-full h-full opacity-60 -z-0"
                 ></div>
@@ -260,25 +258,39 @@
               </div>
             </div>
 
-            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
-              <div class="flex flex-col">
-                <span class="countdown font-mono text-5xl">
-                  <span style="--value: 15"></span>
-                </span>
-                days
+            <div class="grid grid-flow-col text-center auto-cols-max">
+              <div
+                class="flex items-center after:content-[url('./images/Frame.svg')] after:inline-block after:h-4 after:w-1/2"
+              >
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value: 15"></span>
+                  </span>
+                  days
+                </div>
               </div>
-              <div class="flex flex-col">
-                <span class="countdown font-mono text-5xl">
-                  <span style="--value: 10"></span>
-                </span>
-                hours
+
+              <div
+                class="flex items-center after:content-[url('./images/Frame.svg')] after:inline-block after:h-4 after:w-1/2"
+              >
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value: 10"></span>
+                  </span>
+                  hours
+                </div>
               </div>
-              <div class="flex flex-col">
-                <span class="countdown font-mono text-5xl">
-                  <span style="--value: 24"></span>
-                </span>
-                min
+              <div
+                class="flex items-center after:content-[url('./images/Frame.svg')] after:inline-block after:h-4 after:w-1/2"
+              >
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value: 24"></span>
+                  </span>
+                  min
+                </div>
               </div>
+
               <div class="flex flex-col">
                 <span class="countdown font-mono text-5xl">
                   <span style="--value: 53"></span>
