@@ -296,7 +296,7 @@
               </div>
             </div>
           </div>
-          <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
             <!-- card 1 -->
             <div class="card bg-base-100 shadow-xl">
               <figure class="px-10 pt-10">
@@ -574,11 +574,104 @@
                 </dialog>
               </div>
             </div>
+            <!-- card 4 -->
+            <div class="card bg-base-100 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">12.90$ - 18.85$</h2>
+                <p>Banana</p>
+                <!-- rating -->
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-3"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-3"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-3"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-3"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-3"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="btn" onclick="my_modal_4.showModal()">
+                  Details
+                </button>
+                <dialog
+                  id="my_modal_4"
+                  class="modal modal-bottom sm:modal-middle"
+                >
+                  <form method="dialog" class="modal-box">
+                    <div class="card bg-base-100 shadow-xl">
+                      <figure class="px-10 pt-10">
+                        <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                      </figure>
+                      <div class="card-body items-center text-center">
+                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <p>Red Dragon</p>
+                        <!-- rating -->
+                        <div class="rating">
+                          <input
+                            type="radio"
+                            name="rating-3"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                          <input
+                            type="radio"
+                            name="rating-3"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                          <input
+                            type="radio"
+                            name="rating-3"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                          <input
+                            type="radio"
+                            name="rating-3"
+                            class="mask mask-star-2 bg-orange-400"
+                            checked
+                          />
+                          <input
+                            type="radio"
+                            name="rating-3"
+                            class="mask mask-star-2 bg-orange-400"
+                          />
+                        </div>
+                      </div>
+                    <div class="modal-action">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn btn-ghost">Close</button>
+                      <button class="btn btn-primary">Buy now</button>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+            </div>
           </div>
 
           <!-- button add korte hobe -->
           <div class="text-center mt-4">
-            <button class="btn btn-primary">Details</button>
+            <button class="btn btn-primary">Shop All</button>
           </div>
         </div>
       </section>
